@@ -25,6 +25,7 @@ constructor(private http:HttpClient) { }
         if(user){
           localStorage.setItem('user',JSON.stringify(user));
           this.currentUserSource.next(user);
+          console.log(user)
         }
       })
     )
